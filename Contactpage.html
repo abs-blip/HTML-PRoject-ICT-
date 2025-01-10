@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #edebeb;
+            color: #030202;
+        }
+
+        header {
+            background-color: #a8badb;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: maroon;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        input, textarea, button {
+            width: 90%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #3cb300;
+            border-radius: 4px;
+            background-color: #333;
+            color: #faf0f0;
+        }
+
+        button {
+            background-color: #2cabb5;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        
+        }
+
+        button:hover {
+            background-color: #800000;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #0b0303;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="productpage.html">Products</a>
+    <a href="Contactpage.html">Contact Us</a>
+</nav>
+
+    <div class="container">
+        <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Contact Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

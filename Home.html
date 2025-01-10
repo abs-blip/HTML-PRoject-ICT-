@@ -1,0 +1,209 @@
+
+<!-- Home Page: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 248, 248);
+            color: rgb(0, 0, 0);
+        }
+        header {
+            background-color: rgb(150, 170, 200);
+            color: rgb(255, 255, 255);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 1em;
+            font-size: 1.75em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+        }
+        nav a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: maroon;
+        }
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .content {
+            margin: 20px;
+        }
+        .product {
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid maroon;
+            padding: 10px;
+            text-align: center;
+            background-color: #e3dbdb;
+        }
+        footer {
+            text-align: center;
+            background-color: rgb(16, 1, 1);
+            color: white;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #041618;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        
+        }
+
+        button:hover {
+            background-color: #800000;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elite Wardrobe</h1>
+</header>
+
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="productpage.html">Products</a>
+    <a href="ContactPage.html">Contact Us</a>
+</nav>
+
+<div class="banner">
+    <img src="file:///H:/ICT%20website/HTML%20Final%20Website/BANNER%20LATEST.jpg" alt="Shopping Banner" width="85%">
+</div>
+
+<div class="content">
+    <h1>Welcome to our store</h1>
+    <h3>Click on the links above to browse products or get in touch with us.</h3>
+</div>
+
+<footer>
+    &copy; 2025 Online Shopping. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
+<!-- Products Page: products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+</header>
+
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="productpage.html">Products</a>
+    <a href="Contactpage.html">Contact Us</a> 
+</nav>
+
+<div class="content">
+    <div class="product">
+        <img src="file:///H:/ICT%20website/HTML%20Final%20Website/1682815417607-45ab3d6e98f947f7bddf61de5739a9ae-goods.webp" alt="Product 1" width="150">
+        <h3>Acrylic Mobile 3D Cover</h3>
+        <p>Price:Rs 800</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/2.webp" alt="Product 2" width="150">
+        <h3>Mist Diffuser 4K</h3>
+        <p>Price: Rs 1500</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/3.webp" alt="Product 3" width="150">
+        <h3>RGB Airpods Pro</h3>
+        <p>Price: Rs 1200</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/4.webp" alt="Product 4" width="150">
+        <h3>3D Racing Car</h3>
+        <p>Price: Rs 950</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/5.webp" alt="Product 5" width="150">
+        <h3>YONEX Running Joggers</h3>
+        <p>Price: Rs 500</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/20.png" alt="Product 6" width="150">
+        <h3>3D Women Eye Liner Set</h3>
+        <p>Price: Rs 2000</p>
+    </div>
+    <div class="product">
+        <img src="file:///H:/ICT%20website/ONLINE%20STORE%20HTML%20PROJECT/15.webp" alt="Product 7" width="150">
+        <h3>CASIO Smartwatch Pro</h3>
+        <p>Price: Rs 750</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Online Shopping. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
+<!-- Contact Page: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="content">
+    <h2>We'd love to hear from you!</h2>
+    <form action="submit_form.html" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <br>
+        <button type="submit">Send Message</button>
+        <br> 
+        <br>
+
+        <label for="message">Additional Information</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    </form>
+</div>
+
+<footer>
+    &copy; 2025 Online Shopping. All Rights Reserved.
+</footer>
+
+</body>
+</html>
